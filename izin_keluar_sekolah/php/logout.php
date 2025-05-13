@@ -1,9 +1,8 @@
 <?php
 session_start();
-session_unset(); // Hapus semua session
-session_destroy(); // Hapus session dari server
+session_unset(); 
+session_destroy(); 
 
-// Redirect ke halaman login
 header("Location: ../index.php");
 exit();
 ?>

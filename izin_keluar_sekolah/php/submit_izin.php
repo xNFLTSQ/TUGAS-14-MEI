@@ -11,6 +11,7 @@ $foto = $_FILES['foto']['name'];
 $tmp = $_FILES['foto']['tmp_name'];
 move_uploaded_file($tmp, "../uploads/" . $foto);
 
+// Simpan data
 $username = $_SESSION['username'];
 $user = mysqli_fetch_assoc(mysqli_query($conn, "SELECT id_user FROM users WHERE username='$username'"));
 $id_user = $user['id_user'];

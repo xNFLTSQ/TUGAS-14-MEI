@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['role']) || $_SESSION['role'] != 'siswa') {
-    header(header: "index.php");
+    header("Location: index.php");
     exit();
 }
 include 'php/includes/header.php';

@@ -12,9 +12,9 @@ if (mysqli_num_rows($result) == 1) {
     $_SESSION['role'] = $user['role'];
 
     if ($user['role'] == 'guru') {
-        header(header: "guru_dashboard.php");
+        header("Location: ../guru_dashboard.php");
     } else {
-        header(header: "form_izin.php");
+        header("Location: ../form_izin.php");
     }
 } else {
     echo "Login gagal!";

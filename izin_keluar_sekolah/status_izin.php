@@ -25,5 +25,5 @@ while ($row = mysqli_fetch_assoc($result)) {
     echo "</div>";
 }
 
-include 'footer.php';
+include 'php/includes/footer.php';
 ?>
